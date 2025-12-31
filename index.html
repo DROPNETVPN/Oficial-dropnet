@@ -17,7 +17,7 @@
 *{margin:0;padding:0;box-sizing:border-box}
 
 body{
-  font-family: 'Segoe UI', Arial, sans-serif;
+  font-family:'Segoe UI', Arial, sans-serif;
   background: radial-gradient(circle at top, #16213e, var(--bg));
   color:var(--text);
 }
@@ -33,20 +33,35 @@ body{
   text-align:center;
   padding:90px 20px;
 }
+
+/* FOTO DO TOPO */
+.hero-img{
+  width:100%;
+  max-width:500px; /* tamanho da foto */
+  margin:0 auto 30px;
+  display:block;
+  border-radius:22px;
+  box-shadow:0 0 45px rgba(0,240,255,.6);
+}
+
 .hero h1{
   font-size:52px;
   color:var(--main);
   text-shadow:0 0 35px rgba(0,240,255,.6);
 }
+
 .hero p{
   max-width:700px;
   margin:20px auto;
   font-size:18px;
   color:var(--muted);
 }
+
 .hero .buttons{
   margin-top:30px;
 }
+
+/* BOTÕES */
 .btn{
   display:inline-block;
   padding:15px 32px;
@@ -55,11 +70,13 @@ body{
   text-decoration:none;
   margin:8px;
 }
+
 .btn.primary{
   background:linear-gradient(90deg,var(--main),#00b4ff);
   color:#000;
   box-shadow:0 0 30px rgba(0,240,255,.6);
 }
+
 .btn.outline{
   border:2px solid var(--main);
   color:var(--main);
@@ -72,6 +89,7 @@ body{
   gap:25px;
   margin-top:40px;
 }
+
 .feature{
   background:#0f1628;
   padding:20px;
@@ -79,6 +97,7 @@ body{
   text-align:center;
   border:1px solid rgba(0,240,255,.15);
 }
+
 .feature h3{
   color:var(--main);
   margin-bottom:8px;
@@ -98,32 +117,39 @@ body{
   grid-template-columns:repeat(auto-fit,minmax(320px,1fr));
   gap:35px;
 }
+
 .card{
   background:linear-gradient(180deg,#16213e,var(--card));
   border-radius:25px;
   padding:25px;
   box-shadow:0 0 40px rgba(0,0,0,.7);
 }
+
 .card img{
   width:100%;
   border-radius:18px;
   margin-bottom:20px;
 }
+
 .card h2{
   color:var(--main);
   margin-bottom:10px;
 }
+
 .card ul{
   padding-left:20px;
 }
+
 .card li{
   margin:6px 0;
 }
+
 .card .info{
   margin-top:15px;
   font-size:14px;
   color:var(--muted);
 }
+
 .card .download{
   text-align:center;
   margin-top:25px;
@@ -135,6 +161,7 @@ body{
   box-shadow:0 0 50px rgba(0,240,255,.35);
   position:relative;
 }
+
 .pro::before{
   content:"⭐ RECOMENDADO";
   position:absolute;
@@ -157,14 +184,17 @@ body{
   background:linear-gradient(180deg,#0f1628,#0a0e17);
   border-radius:30px;
 }
+
 .support h2{
   color:var(--main);
   margin-bottom:10px;
 }
+
 .support p{
   color:var(--muted);
   margin-bottom:25px;
 }
+
 .support a{
   display:inline-block;
   padding:15px 30px;
@@ -173,10 +203,12 @@ body{
   text-decoration:none;
   margin:8px;
 }
+
 .whatsapp{
   background:#25d366;
   color:#000;
 }
+
 .telegram{
   background:#0088cc;
   color:#fff;
@@ -191,6 +223,7 @@ footer{
 
 @media(max-width:600px){
   .hero h1{font-size:38px}
+  .hero-img{max-width:360px}
 }
 </style>
 </head>
@@ -201,7 +234,12 @@ footer{
 
 <!-- HERO -->
 <section class="hero">
-  <h1>DROPNET V2</h1>
+
+  <img src="https://i.ibb.co/35vp5yK8/file-00000000179071f5af79d2befa03c69e.png"
+       alt="Dropnet VPN"
+       class="hero-img">
+
+  <h1>DROPNET VPN OFICIAL</h1>
   <p>VPN profissional com tecnologias avançadas para máxima estabilidade, desempenho e segurança em qualquer rede.</p>
 
   <div class="buttons">
@@ -227,6 +265,7 @@ footer{
       <p>App otimizado</p>
     </div>
   </div>
+
 </section>
 
 <!-- APPS -->
@@ -288,7 +327,7 @@ footer{
   <p>Atendimento rápido para ativação, suporte técnico e informações.</p>
 
   <a class="whatsapp" target="_blank"
-     href="https://wa.me/5591993276833?text=Ol%C3%A1%2C%20Gostaria%20de%20Comprar%20Meu%20Acesso!VPN%20">
+     href="https://wa.me/5591993276833">
      📞 WhatsApp VPN
   </a>
 
